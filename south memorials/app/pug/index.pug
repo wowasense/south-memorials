@@ -1,10 +1,47 @@
 extends base/base
 
+block vars
+  - var page = 'homepage'
 
 block title
-  | Памятники на юге России
+  | South Memorials
 
 block content
-  .text Tex
+  .section-header
+    .container
+      +title-section('title-page', 'Производство и монтаж памятников')
+      .section-header__text.row 
+        | Мастерская предлагает изготовление памятников любых форм и размеров. Выполним ваш заказ качественно, оперативно, в указанные сроки. Гранитные памятники отличаются эстетичным внешним видом, 
+        | долговечностью, надежностью. Надгробия из гранита солидны, устойчивы к воздействию солнечных лучей, не боятся морозов, воды. Они не впитывают грязь, пыль, не выцветают, не тускнеют, 
+        | не деформируются, на них не стираются рисунки, надписи. Памятники выдерживают перепады температур и сохраняют первозданный вид спустя десятилетия.
+  .section-callback.container
+    +title-section('title-mini', 'Обратный звонок')
+    .__text Мы перезвоним вам в ближайшее время, проконсультируем и подскажем приблизительную стоимость <br> Для подробного знакомства с нашими услугами перейдите в раздел <a href="" class="section-callback__text_bold">оформление заявки</a>
+    form.callback-form.row.justify-content-around
+      .callback-wrapper
+        input(type="" name="your-name" placeholder="Ваше имя").callback-form__name
+        .__text-agree Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a>  
+      input(type="phone" name="your-phone" placeholder="Контактный телефон").__phone
+      button(type="submit").__btn Узнать стоимость
+  .section-features
+    .container
+      +title-section('title-mini', 'Наши возможности')
+      ul.features-list
+        each flist in [['icon-working','Собственное производство'], ['icon-ten','Опыт работы более 10 лет'], ['icon-rock','Надгробия из настоящего гранита и мрамора'], ['icon-delivery','Доставка и монтаж включены в стоимость'], ['icon-time','Работаем быстро и оперативно']]
+          li.features-item.__item.row.align-items-center.justify-content-between
+            .__icon(class=flist[0])
+            .__text= flist[1]
+  +title-section('title-mini', 'Наши работы')
+  .section-works
+    .container
+      .slider-works.row.justify-content-between.align-items-center
+        .__left-icon
+        each image in [['2'], ['3'], ['4']] 
+          img(src="img/"+image[0]+".jpg").__img.img-responsive
+        .__right-icon
+  +title-section('title-mini', 'Как найти нас')
+  .section-map
+        
+    
   
   

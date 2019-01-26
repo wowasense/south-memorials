@@ -1,7 +1,136 @@
-.block-column
-	
-	&__block
-		&1
-			border: 1px solid black
-		&2
-			border: 1px solid black
+.section-header
+	background-color: $lightblue
+	padding-top: 1rem
+	padding-bottom: 1rem
+	background-clip: padding-box
+	border-bottom: 10px solid $border
+	&__text
+		margin-top: 1rem
+		font-size: 16px
+		letter-spacing: 0.4px
+		line-height: 24px
+
+.section-callback
+	&__text
+		width: 1000px
+		margin: 0 auto
+		margin-top: 1.5rem
+		text-align: center
+		font-size: 20px
+		&_bold
+			font-weight: 800
+			text-decoration: underline
+			color: white
+
+
+.callback-form
+	font-size: 20px
+	margin-top: 3rem
+	&__name
+		box-shadow: inset 0 0 8px rgba(47, 55, 65, 0.5)
+		border-radius: 10px
+		margin-right: 5rem
+		padding-left: .8rem
+		width: 300px
+		height: 55px
+		color: $lightblue
+	&__phone
+		box-shadow: inset 0 0 8px rgba(47, 55, 65, 0.5)
+		border-radius: 10px
+		padding-left: .8rem
+		margin-right: 5rem
+		width: 300px
+		height: 55px
+		color: $lightblue
+	&__btn
+		background-color: $lightblue
+		border: 2px solid white
+		border-radius: 10px
+		width: 300px
+		height: 55px
+		color: white
+.callback-wrapper
+	&__text-agree
+		margin-top: 1rem
+		font-size: 14px
+		width: 250px
+		&_underline
+			text-decoration: underline
+			color: white
+
+.section-features
+	background-color: $lightblue
+	margin-top: 2rem
+	background-clip: padding-box
+	border-top: 10px solid $border
+	border-bottom: 10px solid $border
+
+.icon
+	&-working
+		background: url('../img/icon-working.png')
+		width: 60px
+		height: 60px
+	&-ten
+		background: url('../img/icon-ten.png')
+		width: 51px
+		height: 53px
+	&-rock
+		background: url('../img/icon-rock.png')
+		width: 56px
+		height: 55px
+	&-delivery
+		background: url('../img/icon-delivery.png')
+		width: 46px
+		height: 46px
+	&-time
+		background: url('../img/icon-time.png')
+		width: 48px
+		height: 48px
+
+.features-list
+	list-style: none
+	margin: 0 auto
+	margin-top: 2rem
+	width: 405px
+	font-size: 20px
+	.features-item
+		margin-bottom: 2rem
+		&__icon
+			background-size: contain
+			margin-right: 2rem
+		&__text
+			width: 300px
+
+
+.section-works
+	background-color: $lightblue
+	margin-top: 2rem
+	padding-top: 4rem
+	padding-bottom: 4rem
+	background-clip: padding-box
+	border-top: 10px solid $border
+	border-bottom: 10px solid $border
+
+
+.slider-works
+	&__left-icon
+		background: url('../img/left-arrow.png') no-repeat
+		background-size: contain
+		width: 41px
+		height: 65px
+	&__img
+		width: 300px
+		height: 220px
+	&__right-icon
+		background: url('../img/right-arrow.png') no-repeat
+		background-size: contain
+		width: 41px
+		height: 65px
+
+.section-map
+	background: url('../img/map.jpg') no-repeat
+	background-size: cover
+	width: 100%
+	height: 428px
+	background-clip: padding-box
+	border-top: 10px solid $border

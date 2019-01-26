@@ -1,0 +1,16 @@
+header.header
+  .container
+    .header-block.row.justify-content-between.align-items-end
+      .logo
+        .__img
+        .logo-text
+          .__title south memorials
+          .__text памятники на юге россии
+      nav.menu.__menu
+        ul.list.__list.d-flex
+          each linkName in [['index', 'Главная'], ['order', 'Оформление заявки'], ['about-us', 'О нас'], ['faq', 'Вопрос - ответ']]
+            li.__item
+              a(href=linkName[0]+".html") #{linkName[1]}
+      .contacts-block
+        .__phone +7 (918) - 900 - 00 - 00
+        ._email contact@southmemorials.com
