@@ -1,0 +1,74 @@
+.section-gallery-title
+  background-color: $lightblue
+  margin-top: 2rem
+  margin-bottom: 2rem
+  padding-bottom: 2rem
+  background-clip: padding-box
+  border-top: 10px solid $border
+  border-bottom: 10px solid $border
+  font-size: 20px
+
+.gallery-item
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-top: 2rem
+  margin-right: 1rem
+  padding: 1rem 3rem 1rem 3rem
+  width: 260px
+  background-color: $darkblue
+  background-clip: padding-box
+  border: 10px solid $border
+  &__img
+
+  &__info
+    position: absolute
+    bottom: 70px
+    height: 70px
+    width: 245px
+    padding-left: .5rem
+    padding-right: .5rem
+    padding-bottom: .5rem
+    background-color: rgba(#282d34, 0.87)
+    font-size: 14px
+  &__btn
+    transition: all 0.15s
+    margin-top: 1rem
+    background-color: $lightblue
+    border: 2px solid white
+    border-radius: 10px
+    width: 225px
+    height: 45px
+    font-size: 18px
+    &:hover
+      transition: all 0.15s
+      background-color: white
+      color: $darkblue
+
+.widget-checkout
+  transition: all 0.15s
+  transform: rotate(-90deg)
+  position: fixed
+  right: -107px
+  top: 500px
+  display: flex
+  height: 50px
+  align-items: center
+  padding-left: .5rem
+  padding-right: .5rem
+  background-clip: padding-box
+  border-top: 5px solid rgba(255, 255, 255, 0.4)
+  background-color: rgba(#46484b, 0.4)
+  &:hover
+    transition: all 0.15s
+    background-color: rgba(#1f2836, 0.8)
+  &__icon
+    transform: rotate(90deg)
+    background: url('../img/icon-checkout.png') no-repeat
+    width: 28px
+    height: 26px
+  &__text
+    margin-left: 1rem
+    font-size: 16px
+    letter-spacing: 1.2px
