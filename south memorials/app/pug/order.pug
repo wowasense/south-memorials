@@ -30,6 +30,32 @@ block content
             .__desc Артикул: #{gitem[0]} <br> Материал: гранит
             .__price ~ 20 000 руб
           button.__btn Приложить к заявке
+  .section-checkout
+    .container
+      +title-section('title-mini', 'Ваша заявка')
+      form.form-checkout.row.flex-column
+        .checkout-choice.__choice
+          .__label Вы выбрали:
+          .choice-block.__block
+            .checkout-item.__item.d-flex
+              img(src="img/item-1.png").__img.img-responsive
+              .item-desc.__desc.d-flex.flex-column.justify-content-between
+                .__id Артикул: 1
+                .__material Материал: гранит
+                .__price Приблизительная стоимость: ~ 20 000 руб
+            .__text Здесь указана <u>только</u> стоимость памятника. <br> Стоимость работ, доставки и установки памятника вы сможете узнать в ответном звонке.
+            textarea(placeholder="Ваш комментарий...").__comments
+        .checkout-contact.__contact
+          .__label Контактная информация:
+          .contact-block.__block
+            .callback-form.--co.d-flex.justify-content-center
+              .callback-wrapper.__wrapper
+                input(type="" name="your-name" placeholder="Ваше имя *").callback-form__name.--co
+                .__text-agree Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a>
+              input(type="phone" name="your-phone" placeholder="Контактный телефон *").__phone.--co
+              button(type="submit").__btn Оформить заявку
+            .__text-required * - Поля, обязательные для заполнения
+            
     
   
   
