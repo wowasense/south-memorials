@@ -1,0 +1,57 @@
+@import "base/vars/vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  .title-section
+    &__img
+      width: 400px
+    &__title
+      font-size: 30px
+
+
+// ≥992px
++media-breakpoint-down(md)
+  .title-sections
+    &__img
+      width: 370px
+    &__title
+      font-size: 24px
+      margin-top: .3rem
+
+  .title-mini
+    margin-top: 1rem
+    .title-section__img
+      width: 250px
+// ≥768px
++media-breakpoint-down(sm)
+
+// ≥576px
++media-breakpoint-down(xs)
+  .title-section
+    &__img
+      width: 250px
+    &__title
+      font-size: 15px
+      margin-top: 0rem
+      margin-bottom: 0rem
+
+  .title-mini
+    .title-section__img
+      width: 200px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

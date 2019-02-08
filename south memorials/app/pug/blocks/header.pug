@@ -1,5 +1,8 @@
 header.header
-  .container
+  .container-fluid.max-width
+    .header-contacts-m.row
+      a(href="tel:+7-918-900-00-00").__phone +7 (918) - 900 - 00 - 00
+      a(href="mailto:contact@southmemorials.com").__email contact@southmemorials.com
     .header-block.row.justify-content-between.align-items-end
       .logo
         .__img
@@ -12,5 +15,7 @@ header.header
             li.__item
               a(href=linkName[0]+".html") #{linkName[1]}
       .contacts-block
-        .__phone +7 (918) - 900 - 00 - 00
-        ._email contact@southmemorials.com
+        a(href="tel:+7-918-900-00-00").__phone +7 (918) - 900 - 00 - 00
+        .__email 
+          a(href="mailto:contact@southmemorials.com") contact@southmemorials.com
+      .burger-btn-m

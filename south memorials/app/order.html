@@ -10,7 +10,8 @@
   <body>
     <div class="wrapper wrapper_order">
       <header class="header">
-        <div class="container">
+        <div class="container-fluid max-width">
+          <div class="header-contacts-m row"><a class="header-contacts-m__phone" href="tel:+7-918-900-00-00">+7 (918) - 900 - 00 - 00</a><a class="header-contacts-m__email" href="mailto:contact@southmemorials.com">contact@southmemorials.com</a></div>
           <div class="header-block row justify-content-between align-items-end">
             <div class="logo">
               <div class="logo__img"></div>
@@ -27,16 +28,16 @@
                 <li class="list__item"><a href="faq.html">Вопрос - ответ</a></li>
               </ul>
             </nav>
-            <div class="contacts-block">
-              <div class="contacts-block__phone">+7 (918) - 900 - 00 - 00</div>
-              <div class="contacts-block__email">contact@southmemorials.com</div>
+            <div class="contacts-block"><a class="contacts-block__phone" href="tel:+7-918-900-00-00">+7 (918) - 900 - 00 - 00</a>
+              <div class="contacts-block__email"> <a href="mailto:contact@southmemorials.com">contact@southmemorials.com</a></div>
             </div>
+            <div class="burger-btn-m"></div>
           </div>
         </div>
       </header>
       <main class="main">
-        <div class="section-header">
-          <div class="container">
+        <section class="section-header">
+          <div class="container-fluid max-width">
             <section class="title-section title-page row flex-column align-items-center">
               <div class="title-section__img"></div>
               <h2 class="title-section__title">Оформление заявки</h2>
@@ -46,8 +47,8 @@
               и отметить желаемое галочкой. Учтите, что вы можете также отметить несколько работ и «склеить» их в одну, все это будет прикреплено к заявке для вашего удобства. 
             </div>
           </div>
-        </div>
-        <div class="section-gallery-title">
+        </section>
+        <section class="section-gallery-title">
           <div class="container">
             <section class="title-section title-mini row flex-column align-items-center">
               <div class="title-section__img"></div>
@@ -55,8 +56,8 @@
             </section>
             <div class="section-gallery-title__text row justify-content-center">Ниже представлены памятники разного стиля и выполнены из разных материалов</div>
           </div>
-        </div>
-        <div class="section-gallery container">
+        </section>
+        <section class="section-gallery container">
           <div class="gallery-row row justify-content-center">
             <div class="widget-checkout">
               <div class="widget-checkout__icon"></div>
@@ -147,8 +148,8 @@
               <button class="gallery-item__btn">Приложить к заявке</button>
             </div>
           </div>
-        </div>
-        <div class="section-checkout">
+        </section>
+        <section class="section-checkout">
           <div class="container">
             <section class="title-section title-mini row flex-column align-items-center">
               <div class="title-section__img"></div>
@@ -178,6 +179,8 @@
                       <div class="callback-wrapper__text-agree">Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a></div>
                     </div>
                     <input class="callback-form__phone callback-form__phone_co" type="phone" name="your-phone" placeholder="Контактный телефон *">
+                    <div class="callback-form__text-required callback-form__text-required_m">* - Поля, обязательные для заполнения</div>
+                    <div class="callback-form__text-agree callback-form__text-agree_m">Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a></div>
                     <button class="callback-form__btn" type="submit">Оформить заявку</button>
                   </div>
                   <div class="contact-block__text-required">* - Поля, обязательные для заполнения</div>
@@ -185,11 +188,11 @@
               </div>
             </form>
           </div>
-        </div>
+        </section>
       </main>
       <footer class="footer">
-        <div class="container">
-          <div class="footer-block row justify-content-between align-items-end">
+        <div class="container-fluid max-width">
+          <div class="footer-block row">
             <div class="footer-block__links d-flex flex-column"><a>Политика кофиденциальности</a><a>Соглашение об использовании сайта</a></div>
             <div class="footer-block__copyright">“Саус Мемориалс” 2019 <br> © Все права защищены</div>
             <div class="footer-contacts footer-block__contacts">
@@ -206,6 +209,7 @@
                 <div class="footer-contact__text">+7 (918) - 900 - 00 -00</div>
               </div>
             </div>
+            <div class="footer-block__copyright footer-block__copyright_m"> <span>© 2019 "Саус Мемориалс" </span><span class="rights">Все права защищены </span></div>
           </div>
         </div>
       </footer>

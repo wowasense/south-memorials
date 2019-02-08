@@ -7,18 +7,18 @@ block title
   | Оформление заявки
 
 block content
-  .section-header
-    .container
+  section.section-header
+    .container-fluid.max-width
       +title-section('title-page', 'Оформление заявки')
       .section-header__text.row 
         | Цена формируется динамически исходя из желаемого надгробия и местности, на которой будет осуществлен монтаж. Ниже вы можете ознакомиться с работами и их приблизительной стоимостью
         | и отметить желаемое галочкой. Учтите, что вы можете также отметить несколько работ и «склеить» их в одну, все это будет прикреплено к заявке для вашего удобства. 
-  .section-gallery-title
+  section.section-gallery-title
     .container
       +title-section('title-mini', 'Галерея работ')
       .section-gallery-title__text.row.justify-content-center
         | Ниже представлены памятники разного стиля и выполнены из разных материалов
-  .section-gallery.container
+  section.section-gallery.container
     .gallery-row.row.justify-content-center
       .widget-checkout
         .__icon
@@ -30,7 +30,7 @@ block content
             .__desc Артикул: #{gitem[0]} <br> Материал: гранит
             .__price ~ 20 000 руб
           button.__btn Приложить к заявке
-  .section-checkout
+  section.section-checkout
     .container
       +title-section('title-mini', 'Ваша заявка')
       form.form-checkout.row.flex-column
@@ -53,6 +53,8 @@ block content
                 input(type="" name="your-name" placeholder="Ваше имя *").callback-form__name.--co
                 .__text-agree Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a>
               input(type="phone" name="your-phone" placeholder="Контактный телефон *").__phone.--co
+              .__text-required.--m * - Поля, обязательные для заполнения
+              .__text-agree.--m Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a>
               button(type="submit").__btn Оформить заявку
             .__text-required * - Поля, обязательные для заполнения
             

@@ -1,0 +1,150 @@
+@import "base/vars/vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  .slider-works
+    &__img
+      width: 250px
+      height: 170px
+
+
+// ≥992px
++media-breakpoint-down(md)
+  .section-callback
+    &__text
+      br:first-child
+        display: block
+      font-size: 18px
+      line-height: 22px
+
+  .callback-form
+    font-size: 16px
+    &__name
+      width: 200px
+      height: 45px
+    &__phone
+      width: 200px
+      height: 45px
+    &__btn
+      width: 200px
+      height: 45px
+  .callback-wrapper
+    &__text-agree
+      margin-top: .7rem
+      font-size: 12px
+      width: 200px
+
+  .icon
+    &-working
+      width: 50px
+      height: 50px
+    &-ten
+      width: 41px
+      height: 42px
+    &-rock
+      width: 46px
+      height: 45px
+    &-delivery
+      width: 36px
+      height: 36px
+    &-time
+      width: 38px
+      height: 38px
+
+  .features-list
+    font-size: 18px
+    width: 340px
+    .features-item
+      margin-bottom: 1.5rem
+      &__icon
+        margin-right: 1.5rem
+      &__text
+        width: 250px
+  .section-works
+    padding-top: .5rem
+    padding-bottom: 2rem
+  .slider-works
+    flex-direction: column
+    &__left-icon
+      display: none
+    &__img
+      margin-top: 1.5rem
+      width: 400px
+      height: 320px
+    &__right-icon
+      display: none
+
+// ≥768px
++media-breakpoint-down(sm)
+  .callback-form
+    flex-direction: column
+    align-items: center
+    font-size: 18px
+    &__name
+      width: 300px
+      height: 55px
+    &__phone
+      margin-top: 1rem
+      width: 300px
+      height: 55px
+    &__btn
+      margin-top: 1rem
+      width: 300px
+      height: 55px
+    &__text-agree_m
+      display: block
+      font-size: 14px
+      width: 270px
+      margin-top: 1rem
+      margin-right: 20px
+
+    .callback-wrapper
+      &__text-agree
+        display: none
+
+  .features-list
+    margin-top: 1rem
+
+// ≥576px
++media-breakpoint-down(xs)
+  .section-header
+    padding-top: .5rem
+    &__text
+      margin-top: 1rem
+      font-size: 14px
+      line-height: 18px
+
+  .section-callback
+    &__text
+      font-size: 15px
+
+  .features-list
+    font-size: 16px
+    width: 300px
+    padding-left: 0px
+    .features-item
+      justify-content: center
+      &__text
+        width: 210px
+
+  .slider-works
+    &__img
+      width: 300px
+      height: 220px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

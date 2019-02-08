@@ -1,0 +1,141 @@
+@import "base/vars/vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+  .header
+    height: 120px
+
+  .logo
+
+    &__img
+      margin-right: 7px
+      width: 40px
+      height: 57px
+
+  .logo-text
+    width: 160px
+    line-height: 20px
+    &__title
+      font-size: 20px
+    &__text
+      font-size: 10px
+
+  .list
+    font-size: 16px
+    &__item
+      margin-right: 27px
+
+  .contacts-block
+
+    font-size: 16px
+// ≥992px
++media-breakpoint-down(md)
+  .header
+    height: 100px
+
+  .header-block
+    padding-top: 20px
+  .list
+    font-size: 12px
+    padding-left: 0px
+    &__item
+      margin-right: 5px
+      list-style: none
+
+  .contacts-block
+    font-size: 12px
+    font-weight: bold
+
+// ≥768px
++media-breakpoint-down(sm)
+
+  .header
+    height: 110px
+
+  .menu
+    display: none
+
+  .header-contacts-m
+    a
+    	color: white
+    	text-decoration: none
+
+    display: flex
+    justify-content: space-between
+    padding-top: .5rem
+
+  .header-block
+    padding-top: 10px
+
+  .contacts-block
+    display: none
+
+  .burger-btn-m
+    
+    align-self: center
+    width: 31px
+    height: 31px
+    background: url('../../img/burger.png') no-repeat center center
+    background-color: #36383a
+    border: 1px solid rgba(255, 255, 255, 0.35)
+    &:hover
+      cursor: pointer
+      background-color: #64686c
+
+// ≥576px
++media-breakpoint-down(xs)
+  .wrapper
+    background-image: url('../img/background-m.jpg')
+
+
+
+  // iphone 5 support
+  .container
+    max-width: 320px
+
+  .header-contacts-m
+    color: white
+    padding-top: 1rem
+    padding-bottom: .5rem
+    font-size: 14px
+    line-height: 20px
+
+  .logo
+    &__img
+      height: 40px
+      margin-right: 1px
+
+  .logo-text
+    width: 140px
+    line-height: 15px
+    &__title
+      font-size: 16px
+    &__text
+      font-size: 9px
+
+@media screen and (max-width: 400px)
+  .header-contacts-m
+    font-size: 10px
+// iphone 5 support
+@media screen and (max-width: 335px)
+  .row
+    margin: 0
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

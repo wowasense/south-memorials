@@ -3,23 +3,34 @@
     background-color: $darkblue
     border-bottom: 2px solid white
 
+.max-width
+  max-width: 1140px
+  padding-left: 2rem
+  padding-right: 2rem
+
+.header-contacts-m
+  display: none
+
 .header-block
   color: white
-  padding-top: 33px 
+  padding-top: 33px
   font-family: 'Playfair'
   & a
     color: white
     text-decoration: none
 
 .logo
+  flex-grow: 1
   text-transform: uppercase
   display: flex
   align-items: flex-start
   &__img
     margin-right: 10px
-    background: url("../img/logo.png") no-repeat
+    background: url("../img/logo.png") no-repeat center center
+    background-size: contain
     width: 50px
     height: 66px
+
 .logo-text
   width: 190px
   line-height: 25px
@@ -29,6 +40,7 @@
     font-size: 12px
 
 .list
+  flex-grow: 1
   font-size: 18px
   margin-bottom: 0
   &__item
@@ -38,5 +50,6 @@
 
 
 .contacts-block
+  flex-grow: 1
   font-size: 18px
   text-align: right

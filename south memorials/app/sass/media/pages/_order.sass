@@ -1,0 +1,124 @@
+@import "base/vars/vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  .section-gallery-title
+    margin-bottom: 1rem
+
+
+// ≥992px
++media-breakpoint-down(md)
+  .section-gallery-title
+    &__text
+      text-align: center
+
+  .checkout-contact
+    .callback-form
+      font-size: 14px
+// ≥768px
++media-breakpoint-down(sm)
+  .gallery-item
+    margin-top: 1rem
+    width: 310px
+    &__info
+      bottom: 95px
+      width: 290px
+      height: 90px
+      font-size: 16px
+    &__btn
+      width: 275px
+      height: 65px
+      font-size: 20px
+
+  .contact-block
+    &__text-required
+      display: none
+
+  .checkout-contact
+    .callback-form
+      font-size: 20px
+      &__wrapper
+        .callback-form__name
+          margin-right: 0rem
+      &__phone
+        margin-right: 0rem
+      &__text-required_m
+        display: block
+        margin-top: .3rem
+        font-size: 12px
+        width: 285px
+        text-align: right
+
+
+// ≥576px
++media-breakpoint-down(xs)
+  .section-gallery-title
+    padding-bottom: 1.5rem
+    &__text
+      margin-top: .8rem
+      font-size: 16px
+      line-height: 1.2
+
+  .section-checkout
+    padding-bottom: 5rem
+  .checkout-choice
+    &__label
+      margin-top: 1.5rem
+      font-size: 14px
+      font-weight: bold
+      margin-left: 1rem
+  .choice-block
+    padding: 2rem .7rem
+    &__text
+      br
+        display: none
+      font-size: 14px
+      margin-left: .5rem
+      margin-top: 1rem
+      margin-bottom: 1rem
+    &__comments
+      padding-left: .5rem
+      padding-top: .5rem
+      font-size: 16px
+
+  .checkout-contact
+    &__label
+      margin-top: 1.5rem
+      font-size: 14px
+      font-weight: bold
+      margin-left: 1rem
+  .checkout-item
+    align-items: flex-end
+    &__desc
+      height: 140px
+      margin-left: .5rem
+      padding-top: 1.5rem
+      padding-left: .5rem
+      padding-right: .5rem
+      font-size: 14px
+
+  .contact-block
+    .callback-wrapper
+      font-size: 16px
+    .callback-form__phone
+      font-size: 16px
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
