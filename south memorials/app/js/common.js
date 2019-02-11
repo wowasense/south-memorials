@@ -1,15 +1,14 @@
 $(document).ready( function(){
+  const
+    $widget = $('.widget-checkout'),
+    widget = document.querySelector('.widget-checkout'),
+    $body = $('.body'),
+    $parent = $widget.parent(),
+    $firstItem = $('.gallery-item:first'),
+    $sectionCheckout = $('.section-checkout');
   // "Перейти к завершению"
   (function addToCheckout() {
-    const
-      $widget = $('.widget-checkout'),
-      widget = document.querySelector('.widget-checkout'),
-      $body = $('.body'),
-      $parent = $widget.parent(),
-      $firstItem = $('.gallery-item:first'),
-      $sectionCheckout = $('.section-checkout');
     var positionToShow = false;
-
     // скрыть при загрузке
     $widget.remove();
     // показать если релоад на той же позиции
@@ -34,7 +33,7 @@ $(document).ready( function(){
       $widget.remove();
       const coordsTop = $firstItem.get(0).getBoundingClientRect();
       const coordsBottom = $sectionCheckout.get(0).getBoundingClientRect();
-      if (coordsTop.top <= 0 && coordsBottom.top > 0) {
+      if (coordsTop.top <= 0 && coordsBottom.top > 700) {
         positionToShow = true;
         adapt();
       }
@@ -72,6 +71,32 @@ $(document).ready( function(){
       }
     }
 
+
+  })();
+
+  // Прокрутка в начало страницы
+  (function scrollToTop(){
+    var positionToShow = false;
+    const upBtn = document.createElement('div');
+    upBtn.className = 'up-btn';
+
+    $(window).scroll(function(){
+      show();
+    });
+
+    upBtn.onmouseup = function() {
+      window.scrollTo(0, 0);
+    };
+
+    function show() {
+      positionToShow = false;
+      upBtn.remove();
+      const coords = $sectionCheckout.get(0).getBoundingClientRect();
+      if (coords.top <= 700) {
+        positionToShow = true;
+        $body.prepend(upBtn);
+      }
+    }
 
   })();
 
