@@ -18,6 +18,8 @@
   .checkout-contact
     .callback-form
       font-size: 14px
+  .widget-checkout
+    top: 150px
 // ≥768px
 +media-breakpoint-down(sm)
   .gallery-item
@@ -37,6 +39,7 @@
     &__text-required
       display: none
 
+
   .checkout-contact
     .callback-form
       font-size: 20px
@@ -55,6 +58,26 @@
 
 // ≥576px
 +media-breakpoint-down(xs)
+
+  .widget-checkout_m
+    width: 100%
+    transition: all 0.15s
+    transform: rotate(-90deg)
+    position: fixed
+    transform: none
+    bottom: 0px
+    z-index: 1
+    display: flex
+    justify-content: center
+    height: 50px
+    align-items: center
+    padding-left: .5rem
+    padding-right: .5rem
+    background-clip: padding-box
+    border-top: 5px solid rgba(255, 255, 255, 0.98)
+    background-color: rgba(#46484b, 0.98)
+    .widget-checkout__icon
+      transform: none
   .section-gallery-title
     padding-bottom: 1.5rem
     &__text

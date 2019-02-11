@@ -11,11 +11,12 @@ html(lang="ru-RU")
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     block links
-    link(href="css/main.min.css" rel="stylesheet")      
-  body
+    link(href="css/main.min.css" rel="stylesheet")  
+  body.body
     div(class="wrapper wrapper_"+page)
       include ../blocks/header.pug
       main.main
         block content
       include ../blocks/footer.pug
       block scripts
+        script(src="js/scripts.min.js")
