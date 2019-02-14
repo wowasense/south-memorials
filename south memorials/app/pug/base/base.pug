@@ -11,8 +11,10 @@ html(lang="ru-RU")
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     block links
-    link(href="css/main.min.css" rel="stylesheet")  
+    link(href="css/main.min.css" rel="stylesheet")
+    link(href="css/pushy.css" rel="stylesheet")  
   body.body
+    include ../blocks/pushy.pug
     div(class="wrapper wrapper_"+page)
       include ../blocks/header.pug
       main.main
@@ -20,3 +22,5 @@ html(lang="ru-RU")
       include ../blocks/footer.pug
       block scripts
         script(src="js/scripts.min.js")
+        script(src="js/pushy.min.js")
+        script(src="js/modal.js")

@@ -23,12 +23,12 @@ block content
       .widget-checkout
         .__icon
         .__text Перейти к завершению
-      each gitem in [['1'], ['2'], ['3'], ['4'], ['5'], ['6'], ['7'], ['8'], ['9'], ['10'], ['11'], ['12']]
-        div(data-id =gitem[0] data-material="гранит" data-price="20 000").gallery-item
+      each gitem in [['1', 'сталь', '14 000'], ['2', 'мармелад', '16 000'], ['3', 'мрамор', '29 000'], ['4'], ['5'], ['6'], ['7'], ['8'], ['9'], ['10'], ['11'], ['12']]
+        div(data-id =gitem[0] data-material=gitem[1] data-price=gitem[2]).gallery-item
           img(src="img/item-1.png").__img.img-responsive
           .item-info.__info.d-flex.align-items-end.justify-content-between
-            .__desc Артикул: #{gitem[0]} <br> Материал: гранит
-            .__price ~ 20 000 руб
+            .__desc Артикул: #{gitem[0]} <br> Материал: #{gitem[1]}
+            .__price ~ #{gitem[2]} руб
           button.__btn Приложить к заявке
   section.section-checkout
     .container
@@ -40,9 +40,10 @@ block content
             .checkout-item.__item.d-flex
               img(src="img/item-1.png").__img.img-responsive
               .item-desc.__desc.d-flex.flex-column.justify-content-between
-                .__id Артикул: 1
-                .__material Материал: гранит
-                .__price Приблизительная стоимость: ~ 20 000 руб
+                .__id Артикул: <span>1</span>
+                .__material Материал: <span>гранит</span>
+                .__price Приблизительная стоимость: ~ <span>20 000 руб</span>
+            .__clear Очистить выбор
             .__text Здесь указана <u>только</u> стоимость памятника. <br> Стоимость работ, доставки и установки памятника вы сможете узнать в ответном звонке.
             textarea(placeholder="Ваш комментарий...").__comments
         .checkout-contact.__contact
@@ -55,7 +56,12 @@ block content
               input(type="phone" name="your-phone" placeholder="Контактный телефон *").__phone.--co
               .__text-required.--m * - Поля, обязательные для заполнения
               .__text-agree.--m Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a>
-              button(type="submit").__btn Оформить заявку
+              button(type="submit" data-modal="#modal1").__btn.open-modal Оформить заявку
+              .modal#modal1
+                .content
+                  h2.title Ваша заявка отправлена
+                  p.__text Мы свяжемся с вами в ближайшее время
+                  a(data-modal="#modal1" href="#").btn.close-modal Закрыть
             .__text-required * - Поля, обязательные для заполнения
             
     

@@ -6,8 +6,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/main.min.css" rel="stylesheet">
+    <link href="css/pushy.css" rel="stylesheet">
   </head>
   <body class="body">
+    <nav class="pushy pushy-right">
+      <div class="pushy-content">
+        <ul>
+          <li class="pushy-link"><a href="index.html">Главная</a></li>
+          <li class="pushy-link"><a href="order.html">Оформление заявки</a></li>
+          <li class="pushy-link"><a href="order.html">О нас</a></li>
+          <li class="pushy-link"><a href="order.html">Вопрос - ответ</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="site-overlay"></div>
     <div class="wrapper wrapper_homepage">
       <header class="header">
         <div class="container-fluid max-width">
@@ -31,7 +43,7 @@
             <div class="contacts-block"><a class="contacts-block__phone" href="tel:+7-918-900-00-00">+7 (918) - 900 - 00 - 00</a>
               <div class="contacts-block__email"> <a href="mailto:contact@southmemorials.com">contact@southmemorials.com</a></div>
             </div>
-            <div class="burger-btn-m"></div>
+            <div class="burger-btn-m menu-btn"></div>
           </div>
         </div>
       </header>
@@ -61,7 +73,13 @@
               <div class="callback-wrapper__text-agree">Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a>  </div>
             </div>
             <input class="callback-form__phone" type="phone" name="your-phone" placeholder="Контактный телефон">
-            <button class="callback-form__btn" type="submit">Узнать стоимость</button>
+            <button class="callback-form__btn open-modal" type="submit" data-modal="#modal1">Узнать стоимость</button>
+            <div class="modal" id="modal1">
+              <div class="content">
+                <h2 class="title">Ваша заявка отправлена</h2>
+                <p class="content__text">Мы свяжемся с вами в ближайшее время</p><a class="btn close-modal" data-modal="#modal1" href="#">Закрыть</a>
+              </div>
+            </div>
             <div class="callback-form__text-agree callback-form__text-agree_m">Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a></div>
           </form>
         </section>
@@ -137,6 +155,8 @@
         </div>
       </footer>
       <script src="js/scripts.min.js"></script>
+      <script src="js/pushy.min.js"></script>
+      <script src="js/modal.js"></script>
     </div>
   </body>
 </html>

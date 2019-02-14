@@ -110,6 +110,7 @@ $(document).ready( function(){
       $blockForm = $('.form-checkout'),
       $blockChoice = $('.choice-block'),
       $blockItem = $('.checkout-item'),
+      $blockClear = $('.choice-block__clear'),
       $blockComments = $('.choice-block__comments'),
       $blockText = $('.choice-block__text'),
       $blockContact = $('.checkout-contact'),
@@ -135,11 +136,15 @@ $(document).ready( function(){
 
     };
 
+
     function show() {
-      if (!JSON.parse(localStorage.getItem('items'))) {
+      let items = [];
+      items = JSON.parse( localStorage.getItem('items') );
+      if (items === null) {
         $blockItem.remove();
         $blockComments.remove();
         $blockContact.remove();
+        $blockClear.remove();
         $blockText.html('Ваша заявка пуста. Выберите необходимое в ');
         const galleryLink = document.createElement('span');
         galleryLink.className = 'choice-block-link';
@@ -152,14 +157,50 @@ $(document).ready( function(){
         };
         return;
       }
+      // стереть все и пройтись заново по всему хранилищу
+      $('.checkout-item').remove();
 
-      $blockChoice.prepend($blockItem);
+      for (let i=0; i<items.length; i++) {
+        const $currentItem = $blockItem.clone().insertBefore($blockText);
+        // добавить инфу
+        $currentItem.find('.item-desc__id span').text(items[i].id);
+        $currentItem.find('.item-desc__material span').text(items[i].material);
+        $currentItem.find('.item-desc__price span').text(items[i].price);
+      }
+
+      $blockClear.insertBefore($blockText);
       $blockChoice.append($blockComments);
       $blockText.html('Здесь указана <u>только</u> стоимость памятника. <br> Стоимость работ, доставки и установки памятника вы сможете узнать в ответном звонке.');
       $blockForm.append($blockContact);
+
+      $blockClear.on('mouseup', function() {
+        console.log('ok');
+        $('.checkout-item').remove();
+        clearAll();
+      });
     }
+
+    // Отменить весь выбор
+    function clearAll() {
+      let items = [];
+      const lengthStorage = JSON.parse(localStorage.getItem('items'));
+      if (lengthStorage) {
+        items = JSON.parse( localStorage.getItem('items') );
+
+        for (let i=0; i<items.length; i++) {
+          const id = items[i].id;
+          const btn = document.querySelector(`.gallery-item:nth-child(${id}) .gallery-item__btn`);
+          btn.classList.remove('gallery-item__btn_added');
+          btn.textContent = 'Приложить к заявке';
+        }
+      }
+
+      localStorage.removeItem('items');
+      localStorage.removeItem('time');
+      location.reload();
+    }
+
     // таймер хранения итемов
-    //localStorage.clear();
     (function deleteOldItems() {
       const dateItems = Date.parse( localStorage.getItem('time') );
       const expireDate = new Date() - 1000*60*60*24*14;

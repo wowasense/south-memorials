@@ -22,7 +22,12 @@ block content
         input(type="" name="your-name" placeholder="Ваше имя").callback-form__name
         .__text-agree Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a>  
       input(type="phone" name="your-phone" placeholder="Контактный телефон").__phone
-      button(type="submit").__btn Узнать стоимость
+      button(type="submit" data-modal="#modal1").__btn.open-modal Узнать стоимость
+      .modal#modal1
+        .content
+          h2.title Ваша заявка отправлена
+          p.__text Мы свяжемся с вами в ближайшее время
+          a(data-modal="#modal1" href="#").btn.close-modal Закрыть
       .__text-agree.--m Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a>
   section.section-features
     .container

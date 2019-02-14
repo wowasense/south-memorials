@@ -6,8 +6,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/main.min.css" rel="stylesheet">
+    <link href="css/pushy.css" rel="stylesheet">
   </head>
   <body class="body">
+    <nav class="pushy pushy-right">
+      <div class="pushy-content">
+        <ul>
+          <li class="pushy-link"><a href="index.html">Главная</a></li>
+          <li class="pushy-link"><a href="order.html">Оформление заявки</a></li>
+          <li class="pushy-link"><a href="order.html">О нас</a></li>
+          <li class="pushy-link"><a href="order.html">Вопрос - ответ</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="site-overlay"></div>
     <div class="wrapper wrapper_order">
       <header class="header">
         <div class="container-fluid max-width">
@@ -31,7 +43,7 @@
             <div class="contacts-block"><a class="contacts-block__phone" href="tel:+7-918-900-00-00">+7 (918) - 900 - 00 - 00</a>
               <div class="contacts-block__email"> <a href="mailto:contact@southmemorials.com">contact@southmemorials.com</a></div>
             </div>
-            <div class="burger-btn-m"></div>
+            <div class="burger-btn-m menu-btn"></div>
           </div>
         </div>
       </header>
@@ -63,87 +75,87 @@
               <div class="widget-checkout__icon"></div>
               <div class="widget-checkout__text">Перейти к завершению</div>
             </div>
-            <div class="gallery-item" data-id="1" data-material="гранит" data-price="20 000"><img class="gallery-item__img img-responsive" src="img/item-1.png">
+            <div class="gallery-item" data-id="1" data-material="сталь" data-price="14 000"><img class="gallery-item__img img-responsive" src="img/item-1.png">
               <div class="item-info gallery-item__info d-flex align-items-end justify-content-between">
-                <div class="item-info__desc">Артикул: 1 <br> Материал: гранит</div>
-                <div class="item-info__price">~ 20 000 руб</div>
+                <div class="item-info__desc">Артикул: 1 <br> Материал: сталь</div>
+                <div class="item-info__price">~ 14 000 руб</div>
               </div>
               <button class="gallery-item__btn">Приложить к заявке</button>
             </div>
-            <div class="gallery-item" data-id="2" data-material="гранит" data-price="20 000"><img class="gallery-item__img img-responsive" src="img/item-1.png">
+            <div class="gallery-item" data-id="2" data-material="мармелад" data-price="16 000"><img class="gallery-item__img img-responsive" src="img/item-1.png">
               <div class="item-info gallery-item__info d-flex align-items-end justify-content-between">
-                <div class="item-info__desc">Артикул: 2 <br> Материал: гранит</div>
-                <div class="item-info__price">~ 20 000 руб</div>
+                <div class="item-info__desc">Артикул: 2 <br> Материал: мармелад</div>
+                <div class="item-info__price">~ 16 000 руб</div>
               </div>
               <button class="gallery-item__btn">Приложить к заявке</button>
             </div>
-            <div class="gallery-item" data-id="3" data-material="гранит" data-price="20 000"><img class="gallery-item__img img-responsive" src="img/item-1.png">
+            <div class="gallery-item" data-id="3" data-material="мрамор" data-price="29 000"><img class="gallery-item__img img-responsive" src="img/item-1.png">
               <div class="item-info gallery-item__info d-flex align-items-end justify-content-between">
-                <div class="item-info__desc">Артикул: 3 <br> Материал: гранит</div>
-                <div class="item-info__price">~ 20 000 руб</div>
+                <div class="item-info__desc">Артикул: 3 <br> Материал: мрамор</div>
+                <div class="item-info__price">~ 29 000 руб</div>
               </div>
               <button class="gallery-item__btn">Приложить к заявке</button>
             </div>
-            <div class="gallery-item" data-id="4" data-material="гранит" data-price="20 000"><img class="gallery-item__img img-responsive" src="img/item-1.png">
+            <div class="gallery-item" data-id="4"><img class="gallery-item__img img-responsive" src="img/item-1.png">
               <div class="item-info gallery-item__info d-flex align-items-end justify-content-between">
-                <div class="item-info__desc">Артикул: 4 <br> Материал: гранит</div>
-                <div class="item-info__price">~ 20 000 руб</div>
+                <div class="item-info__desc">Артикул: 4 <br> Материал: </div>
+                <div class="item-info__price">~  руб</div>
               </div>
               <button class="gallery-item__btn">Приложить к заявке</button>
             </div>
-            <div class="gallery-item" data-id="5" data-material="гранит" data-price="20 000"><img class="gallery-item__img img-responsive" src="img/item-1.png">
+            <div class="gallery-item" data-id="5"><img class="gallery-item__img img-responsive" src="img/item-1.png">
               <div class="item-info gallery-item__info d-flex align-items-end justify-content-between">
-                <div class="item-info__desc">Артикул: 5 <br> Материал: гранит</div>
-                <div class="item-info__price">~ 20 000 руб</div>
+                <div class="item-info__desc">Артикул: 5 <br> Материал: </div>
+                <div class="item-info__price">~  руб</div>
               </div>
               <button class="gallery-item__btn">Приложить к заявке</button>
             </div>
-            <div class="gallery-item" data-id="6" data-material="гранит" data-price="20 000"><img class="gallery-item__img img-responsive" src="img/item-1.png">
+            <div class="gallery-item" data-id="6"><img class="gallery-item__img img-responsive" src="img/item-1.png">
               <div class="item-info gallery-item__info d-flex align-items-end justify-content-between">
-                <div class="item-info__desc">Артикул: 6 <br> Материал: гранит</div>
-                <div class="item-info__price">~ 20 000 руб</div>
+                <div class="item-info__desc">Артикул: 6 <br> Материал: </div>
+                <div class="item-info__price">~  руб</div>
               </div>
               <button class="gallery-item__btn">Приложить к заявке</button>
             </div>
-            <div class="gallery-item" data-id="7" data-material="гранит" data-price="20 000"><img class="gallery-item__img img-responsive" src="img/item-1.png">
+            <div class="gallery-item" data-id="7"><img class="gallery-item__img img-responsive" src="img/item-1.png">
               <div class="item-info gallery-item__info d-flex align-items-end justify-content-between">
-                <div class="item-info__desc">Артикул: 7 <br> Материал: гранит</div>
-                <div class="item-info__price">~ 20 000 руб</div>
+                <div class="item-info__desc">Артикул: 7 <br> Материал: </div>
+                <div class="item-info__price">~  руб</div>
               </div>
               <button class="gallery-item__btn">Приложить к заявке</button>
             </div>
-            <div class="gallery-item" data-id="8" data-material="гранит" data-price="20 000"><img class="gallery-item__img img-responsive" src="img/item-1.png">
+            <div class="gallery-item" data-id="8"><img class="gallery-item__img img-responsive" src="img/item-1.png">
               <div class="item-info gallery-item__info d-flex align-items-end justify-content-between">
-                <div class="item-info__desc">Артикул: 8 <br> Материал: гранит</div>
-                <div class="item-info__price">~ 20 000 руб</div>
+                <div class="item-info__desc">Артикул: 8 <br> Материал: </div>
+                <div class="item-info__price">~  руб</div>
               </div>
               <button class="gallery-item__btn">Приложить к заявке</button>
             </div>
-            <div class="gallery-item" data-id="9" data-material="гранит" data-price="20 000"><img class="gallery-item__img img-responsive" src="img/item-1.png">
+            <div class="gallery-item" data-id="9"><img class="gallery-item__img img-responsive" src="img/item-1.png">
               <div class="item-info gallery-item__info d-flex align-items-end justify-content-between">
-                <div class="item-info__desc">Артикул: 9 <br> Материал: гранит</div>
-                <div class="item-info__price">~ 20 000 руб</div>
+                <div class="item-info__desc">Артикул: 9 <br> Материал: </div>
+                <div class="item-info__price">~  руб</div>
               </div>
               <button class="gallery-item__btn">Приложить к заявке</button>
             </div>
-            <div class="gallery-item" data-id="10" data-material="гранит" data-price="20 000"><img class="gallery-item__img img-responsive" src="img/item-1.png">
+            <div class="gallery-item" data-id="10"><img class="gallery-item__img img-responsive" src="img/item-1.png">
               <div class="item-info gallery-item__info d-flex align-items-end justify-content-between">
-                <div class="item-info__desc">Артикул: 10 <br> Материал: гранит</div>
-                <div class="item-info__price">~ 20 000 руб</div>
+                <div class="item-info__desc">Артикул: 10 <br> Материал: </div>
+                <div class="item-info__price">~  руб</div>
               </div>
               <button class="gallery-item__btn">Приложить к заявке</button>
             </div>
-            <div class="gallery-item" data-id="11" data-material="гранит" data-price="20 000"><img class="gallery-item__img img-responsive" src="img/item-1.png">
+            <div class="gallery-item" data-id="11"><img class="gallery-item__img img-responsive" src="img/item-1.png">
               <div class="item-info gallery-item__info d-flex align-items-end justify-content-between">
-                <div class="item-info__desc">Артикул: 11 <br> Материал: гранит</div>
-                <div class="item-info__price">~ 20 000 руб</div>
+                <div class="item-info__desc">Артикул: 11 <br> Материал: </div>
+                <div class="item-info__price">~  руб</div>
               </div>
               <button class="gallery-item__btn">Приложить к заявке</button>
             </div>
-            <div class="gallery-item" data-id="12" data-material="гранит" data-price="20 000"><img class="gallery-item__img img-responsive" src="img/item-1.png">
+            <div class="gallery-item" data-id="12"><img class="gallery-item__img img-responsive" src="img/item-1.png">
               <div class="item-info gallery-item__info d-flex align-items-end justify-content-between">
-                <div class="item-info__desc">Артикул: 12 <br> Материал: гранит</div>
-                <div class="item-info__price">~ 20 000 руб</div>
+                <div class="item-info__desc">Артикул: 12 <br> Материал: </div>
+                <div class="item-info__price">~  руб</div>
               </div>
               <button class="gallery-item__btn">Приложить к заявке</button>
             </div>
@@ -161,11 +173,12 @@
                 <div class="choice-block checkout-choice__block">
                   <div class="checkout-item choice-block__item d-flex"><img class="checkout-item__img img-responsive" src="img/item-1.png">
                     <div class="item-desc checkout-item__desc d-flex flex-column justify-content-between">
-                      <div class="item-desc__id">Артикул: 1</div>
-                      <div class="item-desc__material">Материал: гранит</div>
-                      <div class="item-desc__price">Приблизительная стоимость: ~ 20 000 руб</div>
+                      <div class="item-desc__id">Артикул: <span>1</span></div>
+                      <div class="item-desc__material">Материал: <span>гранит</span></div>
+                      <div class="item-desc__price">Приблизительная стоимость: ~ <span>20 000 руб</span></div>
                     </div>
                   </div>
+                  <div class="choice-block__clear">Очистить выбор</div>
                   <div class="choice-block__text">Здесь указана <u>только</u> стоимость памятника. <br> Стоимость работ, доставки и установки памятника вы сможете узнать в ответном звонке.</div>
                   <textarea class="choice-block__comments" placeholder="Ваш комментарий..."></textarea>
                 </div>
@@ -181,7 +194,13 @@
                     <input class="callback-form__phone callback-form__phone_co" type="phone" name="your-phone" placeholder="Контактный телефон *">
                     <div class="callback-form__text-required callback-form__text-required_m">* - Поля, обязательные для заполнения</div>
                     <div class="callback-form__text-agree callback-form__text-agree_m">Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a></div>
-                    <button class="callback-form__btn" type="submit">Оформить заявку</button>
+                    <button class="callback-form__btn open-modal" type="submit" data-modal="#modal1">Оформить заявку</button>
+                    <div class="modal" id="modal1">
+                      <div class="content">
+                        <h2 class="title">Ваша заявка отправлена</h2>
+                        <p class="content__text">Мы свяжемся с вами в ближайшее время</p><a class="btn close-modal" data-modal="#modal1" href="#">Закрыть</a>
+                      </div>
+                    </div>
                   </div>
                   <div class="contact-block__text-required">* - Поля, обязательные для заполнения</div>
                 </div>
@@ -214,6 +233,8 @@
         </div>
       </footer>
       <script src="js/scripts.min.js"></script>
+      <script src="js/pushy.min.js"></script>
+      <script src="js/modal.js"></script>
     </div>
   </body>
 </html>
