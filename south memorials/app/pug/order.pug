@@ -33,7 +33,7 @@ block content
   section.section-checkout
     .container
       +title-section('title-mini', 'Ваша заявка')
-      form.form-checkout.row.flex-column
+      form.form-checkout.row.flex-column#form-order
         .checkout-choice.__choice
           .__label Вы выбрали:
           .choice-block.__block
@@ -45,15 +45,15 @@ block content
                 .__price Приблизительная стоимость: ~ <span>20 000 руб</span>
             .__clear Очистить выбор
             .__text Здесь указана <u>только</u> стоимость памятника. <br> Стоимость работ, доставки и установки памятника вы сможете узнать в ответном звонке.
-            textarea(placeholder="Ваш комментарий...").__comments
+            textarea(placeholder="Ваш комментарий..." name="comments" maxlength="350").__comments
         .checkout-contact.__contact
           .__label Контактная информация:
           .contact-block.__block
             .callback-form.--co.d-flex.justify-content-center
               .callback-wrapper.__wrapper
-                input(type="" name="your-name" placeholder="Ваше имя *").callback-form__name.--co
+                input(type="text" name="name" placeholder="Ваше имя *").callback-form__name.--co
                 .__text-agree Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a>
-              input(type="phone" name="your-phone" placeholder="Контактный телефон *").__phone.--co
+              input(type="tel" name="phone" placeholder="Контактный телефон *").__phone.--co
               .__text-required.--m * - Поля, обязательные для заполнения
               .__text-agree.--m Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a>
               button(type="submit" data-modal="#modal1").__btn.open-modal Оформить заявку

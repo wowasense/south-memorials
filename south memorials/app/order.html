@@ -167,7 +167,7 @@
               <div class="title-section__img"></div>
               <h2 class="title-section__title">Ваша заявка</h2>
             </section>
-            <form class="form-checkout row flex-column">
+            <form class="form-checkout row flex-column" id="form-order">
               <div class="checkout-choice form-checkout__choice">
                 <div class="checkout-choice__label">Вы выбрали:</div>
                 <div class="choice-block checkout-choice__block">
@@ -180,7 +180,7 @@
                   </div>
                   <div class="choice-block__clear">Очистить выбор</div>
                   <div class="choice-block__text">Здесь указана <u>только</u> стоимость памятника. <br> Стоимость работ, доставки и установки памятника вы сможете узнать в ответном звонке.</div>
-                  <textarea class="choice-block__comments" placeholder="Ваш комментарий..."></textarea>
+                  <textarea class="choice-block__comments" placeholder="Ваш комментарий..." name="comments" maxlength="350"></textarea>
                 </div>
               </div>
               <div class="checkout-contact form-checkout__contact">
@@ -188,10 +188,10 @@
                 <div class="contact-block checkout-contact__block">
                   <div class="callback-form callback-form_co d-flex justify-content-center">
                     <div class="callback-wrapper callback-form__wrapper">
-                      <input class="callback-form__name callback-form__name_co" type="" name="your-name" placeholder="Ваше имя *">
+                      <input class="callback-form__name callback-form__name_co" type="text" name="name" placeholder="Ваше имя *">
                       <div class="callback-wrapper__text-agree">Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a></div>
                     </div>
-                    <input class="callback-form__phone callback-form__phone_co" type="phone" name="your-phone" placeholder="Контактный телефон *">
+                    <input class="callback-form__phone callback-form__phone_co" type="tel" name="phone" placeholder="Контактный телефон *">
                     <div class="callback-form__text-required callback-form__text-required_m">* - Поля, обязательные для заполнения</div>
                     <div class="callback-form__text-agree callback-form__text-agree_m">Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a></div>
                     <button class="callback-form__btn open-modal" type="submit" data-modal="#modal1">Оформить заявку</button>
@@ -233,6 +233,8 @@
         </div>
       </footer>
       <script src="js/scripts.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+      <script src="js/jquery.maskedinput.min.js"></script>
       <script src="js/pushy.min.js"></script>
       <script src="js/modal.js"></script>
     </div>

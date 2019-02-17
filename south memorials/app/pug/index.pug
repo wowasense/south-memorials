@@ -16,12 +16,12 @@ block content
         | не деформируются, на них не стираются рисунки, надписи. Памятники выдерживают перепады температур и сохраняют первозданный вид спустя десятилетия.
   section.section-callback.container
     +title-section('title-mini', 'Обратный звонок')
-    .__text Мы перезвоним вам в ближайшее время, проконсультируем и подскажем приблизительную стоимость <br><br> Для подробного знакомства с нашими услугами перейдите в раздел <a href="" class="section-callback__text_bold">оформление заявки</a>
-    form.callback-form.row
+    .__text Мы перезвоним вам в ближайшее время, проконсультируем и подскажем приблизительную стоимость <br><br> Для подробного знакомства с нашими услугами перейдите в раздел <a href="/order.html" class="section-callback__text_bold">оформление заявки</a>
+    form.callback-form.row#form-main
       .callback-wrapper
-        input(type="" name="your-name" placeholder="Ваше имя").callback-form__name
+        input(type="text" name="name" placeholder="Ваше имя").callback-form__name
         .__text-agree Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a>  
-      input(type="phone" name="your-phone" placeholder="Контактный телефон").__phone
+      input(type="tel" name="phone" placeholder="Контактный телефон").__phone
       button(type="submit" data-modal="#modal1").__btn.open-modal Узнать стоимость
       .modal#modal1
         .content
