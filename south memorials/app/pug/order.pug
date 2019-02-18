@@ -50,10 +50,11 @@ block content
           .__label Контактная информация:
           .contact-block.__block
             .callback-form.--co.d-flex.justify-content-center
-              .callback-wrapper.__wrapper
+              .callback-wrapper.__wrapper.d-flex.flex-column
                 input(type="text" name="name" placeholder="Ваше имя *").callback-form__name.--co
                 .__text-agree Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a>
-              input(type="tel" name="phone" placeholder="Контактный телефон *").__phone.--co
+              .callback-wrapper.__wrapper.d-flex.flex-column
+                input(type="tel" name="phone" placeholder="Контактный телефон *").callback-form__phone.--co
               .__text-required.--m * - Поля, обязательные для заполнения
               .__text-agree.--m Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a>
               button(type="submit" data-modal="#modal1").__btn.open-modal Оформить заявку

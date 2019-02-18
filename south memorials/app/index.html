@@ -68,11 +68,13 @@
           </section>
           <div class="section-callback__text">Мы перезвоним вам в ближайшее время, проконсультируем и подскажем приблизительную стоимость <br><br> Для подробного знакомства с нашими услугами перейдите в раздел <a href="/order.html" class="section-callback__text_bold">оформление заявки</a></div>
           <form class="callback-form row" id="form-main">
-            <div class="callback-wrapper">
+            <div class="callback-wrapper d-flex flex-column">
               <input class="callback-form__name" type="text" name="name" placeholder="Ваше имя">
               <div class="callback-wrapper__text-agree">Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a>  </div>
             </div>
-            <input class="callback-form__phone" type="tel" name="phone" placeholder="Контактный телефон">
+            <div class="callback-wrapper callback-form__wrapper d-flex flex-column">
+              <input class="callback-form__phone" type="tel" name="phone" placeholder="Контактный телефон">
+            </div>
             <button class="callback-form__btn open-modal" type="submit" data-modal="#modal1">Узнать стоимость</button>
             <div class="modal" id="modal1">
               <div class="content">

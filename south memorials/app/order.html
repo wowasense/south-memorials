@@ -187,11 +187,13 @@
                 <div class="checkout-contact__label">Контактная информация:</div>
                 <div class="contact-block checkout-contact__block">
                   <div class="callback-form callback-form_co d-flex justify-content-center">
-                    <div class="callback-wrapper callback-form__wrapper">
+                    <div class="callback-wrapper callback-form__wrapper d-flex flex-column">
                       <input class="callback-form__name callback-form__name_co" type="text" name="name" placeholder="Ваше имя *">
                       <div class="callback-wrapper__text-agree">Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a></div>
                     </div>
-                    <input class="callback-form__phone callback-form__phone_co" type="tel" name="phone" placeholder="Контактный телефон *">
+                    <div class="callback-wrapper callback-form__wrapper d-flex flex-column">
+                      <input class="callback-form__phone callback-form__phone_co" type="tel" name="phone" placeholder="Контактный телефон *">
+                    </div>
                     <div class="callback-form__text-required callback-form__text-required_m">* - Поля, обязательные для заполнения</div>
                     <div class="callback-form__text-agree callback-form__text-agree_m">Оставляя данные, я принимаю <a href="" class="callback-wrapper__text-agree_underline">политику конфиденциальности</a></div>
                     <button class="callback-form__btn open-modal" type="submit" data-modal="#modal1">Оформить заявку</button>
